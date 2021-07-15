@@ -1,5 +1,5 @@
 .PHONY: bash
-bash: ## docker-compose run --rm app bash
+bash: ## コンテナにbashで入る
 	docker-compose run --rm --service-ports app bash
 
 .PHONY: up
