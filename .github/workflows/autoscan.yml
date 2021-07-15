@@ -27,23 +27,23 @@ jobs:
       - name: debug3
         run: docker-compose run --rm --service-ports -d app ./gradlew bootrun
       - name: debug4-1
-        run: wait 1 && docker container ls -al
+        run: sleep 1 && docker container ls -a
       - name: debug4-2
-        run: wait 2 && docker container ls -al
+        run: sleep 2 && docker container ls -a
       - name: debug4-3
-        run: wait 3 && docker container ls -al
+        run: sleep 3 && docker container ls -a
       - name: debug4-4
-        run: wait 4 && docker container ls -al
+        run: sleep 4 && docker container ls -a
       - name: debug4-5
-        run: wait 5 && docker container ls -al
+        run: sleep 5 && docker container ls -a
       - name: debug4-6
-        run: wait 6 && docker container ls -al
+        run: sleep 6 && docker container ls -a
       - name: debug4-7
-        run: wait 7 && docker container ls -al
+        run: sleep 7 && docker container ls -a
       - name: debug4-8
-        run: wait 8 && docker container ls -al
+        run: sleep 8 && docker container ls -a
       - name: debug4-9
-        run: wait 9 && docker container ls -al
+        run: sleep 9 && docker container ls -a
       - name: debug5
         run: curl localhost:50080
           #      - name: Set up JDK 11
